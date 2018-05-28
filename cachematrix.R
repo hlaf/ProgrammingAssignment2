@@ -30,7 +30,7 @@ cacheSolve <- function(x, ...) {
     return(x_inv)
   }
   # Compute the inverse
-  x_inv <- solve(x$get())
+  x_inv <- solve(x$get(), ...)
   
   # Store the inverse in the cache
   x$setinverse(x_inv)
